@@ -1,4 +1,3 @@
-// app/index.tsx
 import { Stack, useRouter } from 'expo-router';
 import { Pressable, Text, View } from 'react-native';
 import AnimatedBackground from './components/AnimatedBackground';
@@ -12,7 +11,7 @@ export default function HomeScreen() {
       <AnimatedBackground />
       <Stack.Screen options={{ headerShown: false }} />
       <View style={styles.container}>
-        <Text style={styles.title}>🎮 App de Jogos</Text>
+        <Text style={styles.title}>App de Jogos</Text>
         <Text style={styles.subtitle}>Organize seus jogos favoritos!</Text>
 
         <Pressable style={styles.button} onPress={() => router.push('/jogos')}>

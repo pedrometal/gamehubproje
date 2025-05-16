@@ -10,17 +10,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontFamily: 'PressStart2P_400Regular',
     color: '#FFD369',
-    marginBottom: 10,
+    marginBottom: 24,
     textAlign: 'center',
+    textShadowColor: '#893101',
+    textShadowOffset: { width: 2, height: 3 },
+    textShadowRadius: 0,
+  },
+  content: {
+    alignSelf: 'stretch',
+    marginBottom: 40,
   },
   subtitle: {
     fontSize: 16,
-    color: '#D9D7E5',
-    marginBottom: 40,
-    textAlign: 'center',
+    color: '#FFFFFF',
+    marginBottom: 16,
+    textAlign: 'left',
+  },
+
+  listItem: {
+    fontSize: 16,
+    color: '#FFFFFF',
+    textAlign: 'left',
+    paddingLeft: 8,
+    marginBottom: 8,
   },
   button: {
     backgroundColor: '#1B1B2F',
@@ -37,7 +52,6 @@ const styles = StyleSheet.create({
     color: '#FFD369',
     fontWeight: 'bold',
     fontSize: 16,
-    
   },
 });
 

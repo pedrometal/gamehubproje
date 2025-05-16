@@ -13,7 +13,7 @@ export default function AnimatedBackground() {
   useEffect(() => {
     Animated.loop(
       Animated.timing(translateX, {
-        toValue: -styles.image.width, // animação até -largura da tela
+        toValue: -styles.image.width,
         duration: 60000,
         useNativeDriver: true,
       })
