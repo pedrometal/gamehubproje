@@ -25,17 +25,28 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontFamily: 'PressStart2P_400Regular',
-    fontSize: 10,
+    fontSize: 14,
     color: '#FFFFFF',
     marginBottom: 16,
-    textAlign: 'left',
+    textAlign: 'center',
+  },
+
+  description: {
+    fontFamily: 'PressStart2P_400Regular',
+    fontSize: 12,
+    color: '#FFFFFF',
+    marginBottom: 16,
+    lineHeight: 22,
+    textAlign: 'center',
   },
   
   listItem: {
-    fontSize: 16,
+    fontFamily: 'PressStart2P_400Regular',
+    fontSize: 12,
     color: '#FFFFFF',
     textAlign: 'left',
     paddingLeft: 8,
+    lineHeight: 22,
     marginBottom: 8,
   },
   button: {

@@ -13,7 +13,7 @@ export default function Sobre() {
 
       <View style={styles.container}>
         <Text style={styles.title}>Sobre o App</Text>
-        <Text style={styles.subtitle}>
+        <Text style={styles.description}>
           Este aplicativo permite que você gerencie seus jogos favoritos de forma simples e intuitiva.
         </Text>
 
