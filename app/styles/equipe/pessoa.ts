@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   title: {
     fontSize: 24,
     fontFamily: 'PressStart2P_400Regular',
@@ -19,24 +20,28 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 2, height: 3 },
     textShadowRadius: 0,
   },
-  content: {
+
+  contente: {
     alignSelf: 'stretch',
     marginBottom: 40,
   },
+
   subtitle: {
     fontSize: 16,
     color: '#FFFFFF',
     marginBottom: 16,
     textAlign: 'left',
   },
-  
-  listItem: {
-    fontSize: 16,
-    color: '#FFFFFF',
-    textAlign: 'left',
-    paddingLeft: 8,
-    marginBottom: 8,
+
+  image: {
+    width: 160,
+    height: 160,
+    borderRadius: 80,
+    marginBottom: 24,
+    borderWidth: 2,
+    borderColor: '#FFD369',
   },
+
   button: {
     backgroundColor: '#1B1B2F',
     paddingVertical: 12,
@@ -45,9 +50,10 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     borderColor: '#FFD369',
     borderWidth: 1,
-    width: width * 0.7,
+    width: width * 0.4,
     alignItems: 'center',
   },
+
   buttonText: {
     color: '#FFD369',
     fontWeight: 'bold',
