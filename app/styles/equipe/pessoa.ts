@@ -27,8 +27,10 @@ const styles = StyleSheet.create({
   },
 
   subtitle: {
-    fontSize: 16,
+    fontFamily: 'PressStart2P_400Regular',
+    fontSize: 10,
     color: '#FFFFFF',
+    lineHeight: 20,
     marginBottom: 16,
     textAlign: 'left',
   },
@@ -46,18 +48,23 @@ const styles = StyleSheet.create({
     backgroundColor: '#1B1B2F',
     paddingVertical: 12,
     paddingHorizontal: 24,
-    borderRadius: 16,
+    borderRadius: 0,
     marginVertical: 8,
     borderColor: '#FFD369',
-    borderWidth: 1,
-    width: width * 0.4,
+    borderWidth: 4,
+    width: width * 0.7,
     alignItems: 'center',
+    shadowColor: '893101',
+    shadowOffset: { width: 3, height: 3 },
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    elevation: 4,
   },
-
   buttonText: {
+    fontFamily: 'PressStart2P_400Regular',
     color: '#FFD369',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 12,
   },
 });
 
