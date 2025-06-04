@@ -14,15 +14,23 @@ export default function Sobre() {
       <View style={styles.container}>
         <Text style={styles.title}>Sobre o App</Text>
         <Text style={styles.description}>
-          Este aplicativo permite que você gerencie seus jogos favoritos de forma simples e intuitiva.
+          Este aplicativo permite que você descubra, avalie e gerencie seus jogos favoritos de forma simples e intuitiva.
         </Text>
 
         <View style={{ marginBottom: 40 }}>
-          <Text style={styles.listItem}>• Adicione jogos com nome, gênero e plataforma</Text>
-          <Text style={styles.listItem}>• Edite ou remova jogos</Text>
-          <Text style={styles.listItem}>• Visualize os jogos cadastrados</Text>
-          <Text style={styles.listItem}>• Sincronize com o banco de dados</Text>
+          <Text style={styles.listItem}>• Busque jogos usando a API RAWG</Text>
+          <Text style={styles.listItem}>• Avalie jogos com estrelas e comentários</Text>
+          <Text style={styles.listItem}>• Veja avaliações de outros usuários</Text>
+          <Text style={styles.listItem}>• Gerencie suas avaliações</Text>
+          <Text style={styles.listItem}>• Sincronização automática com Back4App</Text>
         </View>
+
+        <Pressable 
+          style={[styles.button, { marginBottom: 10 }]} 
+          onPress={() => router.push('/equipe')}
+        >
+          <Text style={styles.buttonText}>Conheça a Equipe</Text>
+        </Pressable>
 
         <Pressable style={styles.button} onPress={() => router.back()}>
           <Text style={styles.buttonText}>Voltar</Text>

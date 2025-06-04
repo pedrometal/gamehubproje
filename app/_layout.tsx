@@ -1,5 +1,8 @@
 import { PressStart2P_400Regular, useFonts } from '@expo-google-fonts/press-start-2p';
-import { Stack } from 'expo-router';
+import { Slot } from 'expo-router';
+import { useEffect, useState } from 'react';
+import Parse from './config/parse';
+import AuthProvider from './contexts/auth';
 import './globals.css';
 
 export default function RootLayout() {
@@ -7,7 +10,28 @@ export default function RootLayout() {
     PressStart2P_400Regular,
   });
 
-  if (!fontsLoaded) return null;
+  const [isLoading, setIsLoading] = useState(true);
 
-  return <Stack />;
+  useEffect(() => {
+    const init = async () => {
+      try {
+        // Verifica se há um usuário logado
+        await Parse.User.currentAsync();
+      } catch (error) {
+        console.log('Nenhum usuário logado:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    init();
+  }, []);
+
+  if (!fontsLoaded || isLoading) return null;
+
+  return (
+    <AuthProvider>
+      <Slot />
+    </AuthProvider>
+  );
 }
