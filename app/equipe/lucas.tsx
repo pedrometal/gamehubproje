@@ -13,7 +13,7 @@ export default function LucasPage() {
 
       <View style={styles.container}>
         <Image
-          source={require('../../assets/igor.png')}
+          source={require('../../assets/lucas.jpg')}
           style={{
             width: 160,
             height: 160,
@@ -24,12 +24,12 @@ export default function LucasPage() {
           }}
           resizeMode="cover"
         />
-        <Text style={styles.title}>Lucas Mehl</Text>
+        <Text style={styles.title}>Lucas Gurgel</Text>
 
         <View style={styles.contente}>
           <Text style={styles.subtitle}>
-            Desenvolvedor responsável por grande parte do front-end do aplicativo, com foco na construção da interface usando React Native, Expo Router e NativeWind. Participei ativamente da estruturação das telas principais como Home, Equipe e Sobre, além de contribuir para a padronização dos estilos visuais do app.
-          </Text>
+          Desenvolvedor responsável pela estilização
+          Trabalhou na aparência do app, definindo estilos, cores, fontes e layout, garantindo uma interface bonita e consistente. </Text>
         </View>
 
         <Pressable style={styles.button} onPress={() => router.back()}>

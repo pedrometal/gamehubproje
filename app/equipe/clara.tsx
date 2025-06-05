@@ -13,7 +13,7 @@ export default function ClaraPage() {
 
       <View style={styles.container}>
         <Image
-          source={require('../../assets/igor.png')}
+          source={require('../../assets/clara.jpg')}
           style={{
             width: 160,
             height: 160,
@@ -24,11 +24,12 @@ export default function ClaraPage() {
           }}
           resizeMode="cover"
         />
-        <Text style={styles.title}>Clara Battesini</Text>
+        <Text style={styles.title}>Clara Soares</Text>
 
         <View style={styles.contente}>
           <Text style={styles.subtitle}>
-            Desenvolvedora responsável por grande parte do front-end do aplicativo, com foco na construção da interface usando React Native, Expo Router e NativeWind. Participei ativamente da estruturação das telas principais como Home, Equipe e Sobre, além de contribuir para a padronização dos estilos visuais do app.
+           Desenvolvedora responsável pelo back-end
+            Fez a integração com a API RAWG e com o banco de dados em nuvem usando o Back4App, assegurando que os dados fossem salvos e recuperados corretamente.
           </Text>
         </View>
 

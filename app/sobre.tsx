@@ -18,11 +18,10 @@ export default function Sobre() {
         </Text>
 
         <View style={{ marginBottom: 40 }}>
-          <Text style={styles.listItem}>• Busque jogos usando a API RAWG</Text>
+          <Text style={styles.listItem}>•  Exibição de imagens e informações detalhadas dos jogos</Text>
           <Text style={styles.listItem}>• Avalie jogos com estrelas e comentários</Text>
           <Text style={styles.listItem}>• Veja avaliações de outros usuários</Text>
           <Text style={styles.listItem}>• Gerencie suas avaliações</Text>
-          <Text style={styles.listItem}>• Sincronização automática com Back4App</Text>
         </View>
 
         <Pressable 

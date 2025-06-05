@@ -71,6 +71,15 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 12,
   },
+  input: {
+  width: '100%',
+  backgroundColor: '#333',  // fundo escuro para texto branco
+  padding: 12,
+  borderRadius: 8,
+  color: '#fff',             // texto branco
+  marginBottom: 10,
+},
+
 });
 
 export default styles;

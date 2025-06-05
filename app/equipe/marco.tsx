@@ -13,7 +13,7 @@ export default function MarcoPage() {
 
       <View style={styles.container}>
         <Image
-          source={require('../../assets/igor.png')}
+          source={require('../../assets/marco.jpg')}
           style={{
             width: 160,
             height: 160,
@@ -28,8 +28,8 @@ export default function MarcoPage() {
 
         <View style={styles.contente}>
           <Text style={styles.subtitle}>
-            Desenvolvedor responsável por grande parte do front-end do aplicativo, com foco na construção da interface usando React Native, Expo Router e NativeWind. Participei ativamente da estruturação das telas principais como Home, Equipe e Sobre, além de contribuir para a padronização dos estilos visuais do app.
-          </Text>
+           Desenvolvedor responsável pelo front-end
+            Criou as telas do aplicativo, cuidou da navegação entre as páginas e da estrutura visual utilizando React Native com Expo Router.    </Text>
         </View>
 
         <Pressable style={styles.button} onPress={() => router.back()}>
